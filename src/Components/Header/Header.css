@@ -11,5 +11,24 @@
     font-weight: 500;
 }
 .menu-bar a:hover{
-    color: tomato;
+    color:tomato;
+}
+.user-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 14px;
+}
+.login-btn{
+    border: none;
+    background-color: salmon;
+    color: black;
+    padding: 5px 5px ;
+    border-radius: 5px;
+}
+.logout-btn{
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
 }

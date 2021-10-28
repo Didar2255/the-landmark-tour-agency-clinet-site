@@ -2,8 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../../Images/Logo/logo 2.png'
+import useFirebase from '../../Hooks/useFirebase';
 import "./Header.css"
 const Header = () => {
+    const { handelSignOut, user } = useFirebase()
     return (
         <div>
             <Navbar bg="light" variant="light" className="menu-bar">
@@ -23,7 +25,11 @@ const Header = () => {
                         <NavLink to='/manageorder'>Manage All Order</NavLink>
                         <NavLink to='/newservice'>Add New Tour</NavLink>
                         <NavLink to='/about'>About Us</NavLink>
-                        <NavLink to='/login'>Log-In</NavLink>
+                        {user.email && <span className='user-name'>{user.displayName}</span>}
+                        {
+                            !user.email ? <NavLink to='/login'><button className='login-btn'>Log-In</button></NavLink>
+                                : <button className='logout-btn' onClick={handelSignOut}>Log-Out</button>
+                        }
                     </Nav>
                 </Container>
             </Navbar>
