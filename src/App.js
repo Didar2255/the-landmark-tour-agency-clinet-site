@@ -8,36 +8,47 @@ import LogIn from './Pages/LogIn/LogIn'
 import Register from './Pages/Register/Register'
 import Error from './Pages/Error/Error'
 import Header from './Components/Header/Header';
+import AuthProvider from './Components/AuthProvider/AuthProvider';
+import About from './Pages/About/About';
+import MyOrders from './Components/MyOrders/MyOrders';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/manageorder'>
-            <ManageAllOrder></ManageAllOrder>
-          </Route>
-          <Route path='/newservice'>
-            <AddNewServices></AddNewServices>
-          </Route>
-          <Route path='/login'>
-            <LogIn></LogIn>
-          </Route>
-          <Route path='/register'>
-            <Register></Register>
-          </Route>
-          <Route path='*'>
-            <Error></Error>
-          </Route>
-        </Switch>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route path='/manageorder'>
+              <ManageAllOrder></ManageAllOrder>
+            </Route>
+            <Route path='/order'>
+              <MyOrders></MyOrders>
+            </Route>
+            <Route path='/newservice'>
+              <AddNewServices></AddNewServices>
+            </Route>
+            <Route path='/about'>
+              <About></About>
+            </Route>
+            <Route path='/login'>
+              <LogIn></LogIn>
+            </Route>
+            <Route path='/register'>
+              <Register></Register>
+            </Route>
+            <Route path='*'>
+              <Error></Error>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

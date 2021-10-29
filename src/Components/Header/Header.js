@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../../Images/Logo/logo 2.png'
-import useFirebase from '../../Hooks/useFirebase';
 import "./Header.css"
+import useAuth from '../../Hooks/useAuth';
 const Header = () => {
-    const { handelSignOut, user } = useFirebase()
+    const { handelSignOut, user } = useAuth()
     return (
         <div>
             <Navbar bg="light" variant="light" className="menu-bar">
@@ -23,6 +23,7 @@ const Header = () => {
                     <Nav className="ms-auto">
                         <NavLink to='/home'>Home</NavLink>
                         <NavLink to='/manageorder'>Manage All Order</NavLink>
+                        <NavLink to='/order'>My Order</NavLink>
                         <NavLink to='/newservice'>Add New Tour</NavLink>
                         <NavLink to='/about'>About Us</NavLink>
                         {user.email && <span className='user-name'>{user.displayName}</span>}

@@ -21,10 +21,14 @@ const Home = () => {
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         {
-                            tours.map(tour => <SingleToure
-                                key={tour._id}
-                                tour={tour}
-                            ></SingleToure>)
+                            tours.map((tour, index) =>
+                                <SingleToure
+                                    key={tour._id}
+                                    tour={tour}
+                                    index={index}
+                                    tours={tours}
+                                ></SingleToure>)
+
                         }
                     </Row>
                 </Container>

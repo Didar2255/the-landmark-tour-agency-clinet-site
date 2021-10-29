@@ -13,7 +13,6 @@ const useFirebase = () => {
     const handelGoogleSignIn = () => {
         signInWithPopup(auth, provider)
             .then(result => {
-                console.log(result.user)
                 setUser(result.user)
             })
             .catch(error => {
