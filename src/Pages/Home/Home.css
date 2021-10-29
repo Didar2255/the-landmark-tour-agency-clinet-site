@@ -2,3 +2,17 @@
     background-color: #231E39;
     color: white;
 }
+.tour-guide:hover{
+    box-shadow: 0.5rem 0rem 1rem lightgray;
+}
+.social-icon i{
+    font-size: 30px;
+    margin: 10px;
+    background-color: white;
+    color: coral;
+}
+.social-icon i:hover{
+    color: rgb(64, 90, 196);
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}

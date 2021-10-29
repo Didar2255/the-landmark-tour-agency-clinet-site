@@ -12,7 +12,7 @@ const Header = () => {
     const { handelSignOut, user } = useAuth()
     return (
         <div>
-            <Navbar bg="light" variant="light" className="menu-bar">
+            <Navbar bg="light" variant="light" className="menu-bar" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img

@@ -12,6 +12,7 @@ import AuthProvider from './Components/AuthProvider/AuthProvider';
 import About from './Pages/About/About';
 import MyOrders from './Components/MyOrders/MyOrders';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
             <Route path='/newservice'>
               <AddNewServices></AddNewServices>
             </Route>
+            <PrivetRoute path='/placeOrder'>
+              <PlaceOrder></PlaceOrder>
+            </PrivetRoute>
             <Route path='/about'>
               <About></About>
             </Route>

@@ -1,0 +1,14 @@
+.update-icon{
+    color:seagreen;
+    font-size: 18px;
+}
+.update-icon:hover{
+    cursor: pointer;
+}
+.delete-icon{
+    color: red;
+    font-size: 18px;
+}
+.delete-icon:hover{
+    cursor: pointer;
+}
