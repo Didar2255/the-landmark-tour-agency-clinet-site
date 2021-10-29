@@ -5,6 +5,10 @@ import logo from '../../Images/Logo/logo 2.png'
 import "./Header.css"
 import useAuth from '../../Hooks/useAuth';
 const Header = () => {
+    const LinkColor = {
+        fontWeight: "bold",
+        color: "red"
+    }
     const { handelSignOut, user } = useAuth()
     return (
         <div>
@@ -21,11 +25,21 @@ const Header = () => {
                         <span className="tour-title">The Landmark Tour</span>
                     </Navbar.Brand>
                     <Nav className="ms-auto">
-                        <NavLink to='/home'>Home</NavLink>
-                        <NavLink to='/manageorder'>Manage All Order</NavLink>
-                        <NavLink to='/order'>My Order</NavLink>
-                        <NavLink to='/newservice'>Add New Tour</NavLink>
-                        <NavLink to='/about'>About Us</NavLink>
+                        <NavLink to='/home'
+                            activeStyle={LinkColor}
+                        >Home</NavLink>
+                        <NavLink to='/order'
+                            activeStyle={LinkColor}
+                        >My Order</NavLink>
+                        <NavLink to='/manageorder'
+                            activeStyle={LinkColor}
+                        >Manage All Order</NavLink>
+                        <NavLink to='/newservice'
+                            activeStyle={LinkColor}
+                        >Add New Tour</NavLink>
+                        <NavLink to='/about'
+                            activeStyle={LinkColor}
+                        >About Us</NavLink>
                         {user.email && <span className='user-name'>{user.displayName}</span>}
                         {
                             !user.email ? <NavLink to='/login'><button className='login-btn'>Log-In</button></NavLink>
