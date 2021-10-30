@@ -19,23 +19,25 @@ const MyOrders = () => {
     }, [deleted])
 
     const handelOrderPlace = (id) => {
-        fetch(`http://localhost:5000/deleteOrders/${id}`, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount) {
-                    alert('Are you sure to Delete')
-                    setDeleted(true)
-                }
-                else {
-                    setDeleted(false)
-                }
-
+        const proceed = window.confirm('Are you sure to Delete Order')
+        if (proceed) {
+            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        alert('Success fully delete')
+                        setDeleted(true)
+                    }
+                    else {
+                        setDeleted(false)
+                    }
+
+                })
+        }
 
     }
-
     return (
         <div>
             <h2>All Order here {orders.length}</h2>

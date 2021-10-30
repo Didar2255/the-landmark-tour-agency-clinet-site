@@ -11,6 +11,7 @@ const SingleToure = (props) => {
     const handelBooking = (index) => {
         const data = props.tours[index];
         data.email = (user.email)
+        data.status = 'pending'
         axios.post('http://localhost:5000/addOrder', data)
             .then(res => {
                 console.log(res)

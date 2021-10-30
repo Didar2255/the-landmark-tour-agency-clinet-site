@@ -18,7 +18,7 @@ const LogIn = () => {
             })
     }
     return (
-        <div className="login">
+        <div className="login my-5">
             <h1>PLEASE LOG-IN </h1>
             <div className="login-form">
                 <div>

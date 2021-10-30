@@ -14,6 +14,7 @@ import MyOrders from './Components/MyOrders/MyOrders';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import Footer from './Components/Footer/Footer';
+import UpdateStatus from './Components/UpdateStatus/UpdateStatus';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             <PrivetRoute path='/manageorder'>
               <ManageAllOrder></ManageAllOrder>
             </PrivetRoute>
+            <Route path='/updateStatus/:id'>
+              <UpdateStatus></UpdateStatus>
+            </Route>
             <PrivetRoute path='/order'>
               <MyOrders></MyOrders>
             </PrivetRoute>
