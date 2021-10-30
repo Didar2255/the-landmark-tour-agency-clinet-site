@@ -35,18 +35,18 @@ const ManageAllOrder = () => {
     return (
         <div className='my-4'>
             <h2>Manage all order</h2>
-            <div className="row">
-                <div className="col-md-12 ">
+            <div >
+                <div >
                     <Container>
-                        <Table striped bordered hover size="sm">
+                        <Table striped bordered hover size="sm" className='table'>
                             <thead>
                                 <tr>
-                                    <th>Email</th>
-                                    <th>Order Name</th>
-                                    <th>Package Price</th>
-                                    <th>Order Status</th>
-                                    <th>Update</th>
-                                    <th>Delete</th>
+                                    <th >Email</th>
+                                    <th >Order Name</th>
+                                    <th >Package Price</th>
+                                    <th >Order Status</th>
+                                    <th >Update</th>
+                                    <th >Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
