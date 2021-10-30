@@ -29,7 +29,7 @@ const LogIn = () => {
                         <input {...register("Password")} placeholder="Enter Your Password" /> <br />
                         <input type="submit" value='Log In' />
                     </form>
-                    <button className='button' onClick={handelLogIn}><i class="fab fa-google icon"></i> Sign with Google</button>
+                    <button className='button' onClick={handelLogIn}><i className="fab fa-google icon"></i> Sign with Google</button>
                 </div>
             </div>
 

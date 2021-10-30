@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className='col-md-4 col-12'>
                     <h1>The Landmark Tour</h1>
                     <ul>
-                        <li><a href="/"><i class="fas fa-house-user icon"></i> Adabor,17/c,Dhaka</a></li>
-                        <li><a href="/"><i class="fas fa-laptop-house icon"></i> Office NO 1263</a></li>
-                        <li><a href="/"><i class="fas fa-envelope-open-text icon"></i> thelandmark@gmail.com</a></li>
-                        <li><a href="/"><i class="fas fa-phone-alt icon"></i> Phone : 12365498</a></li>
+                        <li><a href="/"><i className="fas fa-house-user icon"></i> Adabor,17/c,Dhaka</a></li>
+                        <li><a href="/"><i className="fas fa-laptop-house icon"></i> Office NO 1263</a></li>
+                        <li><a href="/"><i className="fas fa-envelope-open-text icon"></i> thelandmark@gmail.com</a></li>
+                        <li><a href="/"><i className="fas fa-phone-alt icon"></i> Phone : 12365498</a></li>
                     </ul>
                     <input className='p-1' type="text" placeholder='Email' />
                     <button className='btn btn-danger py-1'>Send</button>

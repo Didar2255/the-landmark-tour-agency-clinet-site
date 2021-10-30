@@ -44,10 +44,10 @@ const Home = () => {
                             <h4>Alison White</h4>
                             <p className='text-primary'>Tavel Guide</p>
                             <div className='social-icon'>
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <i className="fab fa-facebook-square"></i>
+                                <i className="fab fa-instagram-square"></i>
+                                <i className="fab fa-twitter-square"></i>
+                                <i className="fab fa-linkedin"></i>
                             </div>
                         </div>
                         <div className="col-md-3 col-12 tour-guide p-2">
@@ -55,10 +55,10 @@ const Home = () => {
                             <h4>Jennie Bennett</h4>
                             <p className='text-primary'>Toure Guide</p>
                             <div className='social-icon'>
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <i className="fab fa-facebook-square"></i>
+                                <i className="fab fa-instagram-square"></i>
+                                <i className="fab fa-twitter-square"></i>
+                                <i className="fab fa-linkedin"></i>
                             </div>
                         </div>
                         <div className="col-md-3 col-12 tour-guide p-2 ">
@@ -66,10 +66,10 @@ const Home = () => {
                             <h4>William Hobb</h4>
                             <p className='text-primary'>Travel Guide</p>
                             <div className='social-icon'>
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <i className="fab fa-facebook-square"></i>
+                                <i className="fab fa-instagram-square"></i>
+                                <i className="fab fa-twitter-square"></i>
+                                <i className="fab fa-linkedin"></i>
                             </div>
                         </div>
                         <div className="col-md-3 col-12 tour-guide p-2">
@@ -77,10 +77,10 @@ const Home = () => {
                             <h4>Sony Madison</h4>
                             <p className='text-primary'>Toure Guide</p>
                             <div className='social-icon'>
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <i className="fab fa-facebook-square"></i>
+                                <i className="fab fa-instagram-square"></i>
+                                <i className="fab fa-twitter-square"></i>
+                                <i className="fab fa-linkedin"></i>
                             </div>
                         </div>
                     </div>

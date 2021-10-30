@@ -56,8 +56,8 @@ const ManageAllOrder = () => {
                                         <td>{user.tourName}</td>
                                         <td>{user.price}</td>
                                         <td>{user.status}</td>
-                                        <td><Link to={`/updateStatus/${user._id}`}><i class="fas fa-edit update-icon"></i></Link></td>
-                                        <td><i class="fas fa-trash-alt delete-icon" onClick={() => handelDelete(user._id)}></i></td>
+                                        <td><Link to={`/updateStatus/${user._id}`}><i className="fas fa-edit update-icon"></i></Link></td>
+                                        <td><i className="fas fa-trash-alt delete-icon" onClick={() => handelDelete(user._id)}></i></td>
                                     </tr>
                                     )
                                 }

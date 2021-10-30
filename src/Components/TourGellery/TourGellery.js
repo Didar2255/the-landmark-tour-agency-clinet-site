@@ -14,7 +14,7 @@ const TourGellery = () => {
                     <div className="col-md-4 col-12 my-5">
                         <h1>Why Choose us</h1>
                         <p>We are the best tour agency in Bangladesh.We are private retailer or public service that provides travel and tourism-related services.</p>
-                        <button className="family-btn">Join our Family <i class="fas fa-arrow-right"></i></button>
+                        <button className="family-btn">Join our Family <i className="fas fa-arrow-right"></i></button>
                     </div>
                     <div className="col-md-8 col-12">
                         <div>
