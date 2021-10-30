@@ -12,7 +12,7 @@ const SingleToure = (props) => {
         const data = props.tours[index];
         data.email = (user.email)
         data.status = 'pending'
-        axios.post('http://localhost:5000/addOrder', data)
+        axios.post('https://sleepy-springs-36451.herokuapp.com/addOrder', data)
             .then(res => {
                 console.log(res)
             })
@@ -23,7 +23,7 @@ const SingleToure = (props) => {
                 <Card className='tour-service shadow'>
                     <Card.Img variant="top" src={tourImg} />
                     <Card.Body>
-                        <Card.Title className='text-warning'>{tourName}</Card.Title>
+                        <Card.Title className='text-primary'>{tourName}</Card.Title>
                         <Card.Text>
                             {description}
                         </Card.Text>

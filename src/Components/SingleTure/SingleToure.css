@@ -1,12 +1,14 @@
 .buy-btn{
-    background-color: rgb(228, 92, 29);
+    background-color: rgb(16, 95, 104);
 	border: 1px solid #0d2e30;
 	border-radius: 3px;
-	color: #231E39;
+	color: white;
 	font-weight: 500;
 	padding: 10px 25px;
 }
 .buy-btn:hover{
-    background-color:#a2d8dc;
+    background-color:#62e17b;
+	border: 1px solid rgb(134, 140, 148);
+	color: black;
 
 }

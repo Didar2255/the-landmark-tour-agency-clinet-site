@@ -7,7 +7,7 @@ const UpdateStatus = () => {
     const [tour, setTour] = useState({})
     const { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:5000/updateStatus/${id}`)
+        fetch(`https://sleepy-springs-36451.herokuapp.com/updateStatus/${id}`)
             .then(res => res.json())
             .then(data => setTour(data))
     }, []);
@@ -20,7 +20,7 @@ const UpdateStatus = () => {
     };
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/updateStatus/${id}`
+        const url = `https://sleepy-springs-36451.herokuapp.com/updateStatus/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

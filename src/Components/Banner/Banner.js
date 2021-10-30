@@ -16,7 +16,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                         <h1>TRAVELLING AROUND THE WORLD</h1>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <p>Travelling make man Refresh.TO go around the world.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h1>EXPRIENCE THE NATURE'S BEAUTY</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h1 className='text-dark'>EXPRIENCE THE NATURE'S BEAUTY</h1>
+                        <p className='text-dark'>Nature is a God gifted beautiful.Enjoy the Nature and be happy.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -40,7 +40,7 @@ const Banner = () => {
 
                     <Carousel.Caption>
                         <h1>EXPLOR WORLD HERITAGE TURE IN SUNDORBON</h1>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <p>The place between your comfort zone and your dream is where life takes place.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

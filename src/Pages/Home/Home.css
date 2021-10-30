@@ -1,9 +1,10 @@
 .tour-service{
-    background-color: #231E39;
-    color: white;
+    background-color: #e0f8f0;
+    color: black;
 }
 .tour-guide:hover{
     box-shadow: 0.5rem 0rem 1rem lightgray;
+    background-color: linen;
 }
 .social-icon i{
     font-size: 30px;

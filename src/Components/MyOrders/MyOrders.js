@@ -11,7 +11,7 @@ const MyOrders = () => {
     const [deleted, setDeleted] = useState(null)
     const userEmail = (user.email);
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${userEmail}`)
+        fetch(`https://sleepy-springs-36451.herokuapp.com/myOrders/${userEmail}`)
             .then(res => res.json())
             .then(data => {
                 setOrders(data)
@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handelOrderPlace = (id) => {
         const proceed = window.confirm('Are you sure to Delete Order')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+            fetch(`https://sleepy-springs-36451.herokuapp.com/deleteOrders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

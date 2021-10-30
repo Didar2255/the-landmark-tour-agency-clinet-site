@@ -14,7 +14,7 @@ import TourGellery from '../../Components/TourGellery/TourGellery';
 const Home = () => {
     const [tours, setTours] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://sleepy-springs-36451.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setTours(data))
     }, [])
@@ -22,7 +22,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <div className="my-5">
-                <h1 className='mb-4'>Special Tour Package In Sundarban</h1>
+                <h1 className='mb-4'>Special Tour Package</h1>
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         {
