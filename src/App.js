@@ -13,6 +13,7 @@ import About from './Pages/About/About';
 import MyOrders from './Components/MyOrders/MyOrders';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
               <Error></Error>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

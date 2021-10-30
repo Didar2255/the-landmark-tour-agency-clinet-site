@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import "./ManageAllOrder.css"
 
 const ManageAllOrder = () => {
@@ -32,32 +32,33 @@ const ManageAllOrder = () => {
             })
     }
     return (
-        <div>
+        <div className='my-4'>
             <h2>Manage all order</h2>
-
-            <Table striped bordered hover size="sm">
-                <thead>
-                    <tr>
-                        <th>Email</th>
-                        <th>Order Name</th>
-                        <th>Package Price</th>
-                        <th>Update</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        users.map(user => <tr>
-                            <td>{user.email}</td>
-                            <td>{user.tourName}</td>
-                            <td>{user.price}</td>
-                            <td><i class="fas fa-edit update-icon" onClick={handelUpdate}></i></td>
-                            <td><i class="fas fa-trash-alt delete-icon" onClick={() => handelDelete(user._id)}></i></td>
+            <Container>
+                <Table striped bordered hover size="sm">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Order Name</th>
+                            <th>Package Price</th>
+                            <th>Update</th>
+                            <th>Delete</th>
                         </tr>
-                        )
-                    }
-                </tbody>
-            </Table>
+                    </thead>
+                    <tbody>
+                        {
+                            users.map(user => <tr>
+                                <td>{user.email}</td>
+                                <td>{user.tourName}</td>
+                                <td>{user.price}</td>
+                                <td><i class="fas fa-edit update-icon" onClick={handelUpdate}></i></td>
+                                <td><i class="fas fa-trash-alt delete-icon" onClick={() => handelDelete(user._id)}></i></td>
+                            </tr>
+                            )
+                        }
+                    </tbody>
+                </Table>
+            </Container>
         </div>
     );
 };

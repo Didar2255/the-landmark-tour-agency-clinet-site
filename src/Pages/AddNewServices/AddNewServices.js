@@ -15,9 +15,9 @@ const AddNewServices = () => {
             })
     };
     return (
-        <div>
-            <h2>Add New services</h2>
-            <div className="w-50 m-auto mt-5 h-5">
+        <div className='my-4'>
+            <h2>Add New Services</h2>
+            <div className="w-50 m-auto mt-4 h-5">
                 <div className=" border  d-flex align-items-center justify-content-center p-4 rounded bg-light" >
                     <div className="">
                         <form onSubmit={handleSubmit(onSubmit)}>
