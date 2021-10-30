@@ -32,9 +32,9 @@ function App() {
             <PrivetRoute path='/manageorder'>
               <ManageAllOrder></ManageAllOrder>
             </PrivetRoute>
-            <Route path='/updateStatus/:id'>
+            <PrivetRoute path='/updateStatus/:id'>
               <UpdateStatus></UpdateStatus>
-            </Route>
+            </PrivetRoute>
             <PrivetRoute path='/order'>
               <MyOrders></MyOrders>
             </PrivetRoute>
