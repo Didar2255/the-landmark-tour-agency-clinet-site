@@ -25,18 +25,21 @@ const TourGellery = () => {
                     </div>
                 </div>
             </Container>
-            <div className="row g-3 my-4">
-                <div className="col-md-3 col-12">
-                    <img src={pic3} alt="" className='img-fluid rounded' />
-                </div>
-                <div className=" col-md-3 col-12">
-                    <img src={pic4} alt="" className='img-fluid rounded' />
-                </div>
-                <div className=" col-md-3 col-12">
-                    <img src={pic5} alt="" className='img-fluid rounded' />
-                </div>
-                <div className=" col-md-3 col-12">
-                    <img src={pic6} alt="" className='img-fluid rounded' />
+            <div className="my-4">
+                <h1>Nature View </h1>
+                <div className="row g-3 mt-3">
+                    <div className="col-md-3 col-12 tour-img">
+                        <img src={pic3} alt="" className='img-fluid rounded' />
+                    </div>
+                    <div className=" col-md-3 col-12 tour-img">
+                        <img src={pic4} alt="" className='img-fluid rounded' />
+                    </div>
+                    <div className=" col-md-3 col-12 tour-img">
+                        <img src={pic5} alt="" className='img-fluid rounded' />
+                    </div>
+                    <div className=" col-md-3 col-12 tour-img">
+                        <img src={pic6} alt="" className='img-fluid rounded' />
+                    </div>
                 </div>
             </div>
         </div >
