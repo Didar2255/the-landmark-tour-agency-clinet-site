@@ -19,7 +19,7 @@ const LogIn = () => {
     }
     return (
         <div className="login my-5">
-            <h1>PLEASE LOG-IN </h1>
+            <h1>Welcome TO Landmark tour ! PLEASE LOG-IN </h1>
             <div className="login-form">
                 <div>
                     <form onSubmit={handleSubmit(onSubmit)}>

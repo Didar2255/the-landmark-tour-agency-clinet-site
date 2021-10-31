@@ -18,9 +18,9 @@ const PlaceOrder = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("Name")} defaultValue={user.displayName} placeholder="Enter Name" />
                 <input {...register("Email")} defaultValue={user.email} placeholder="Enter Email" />
-                <input {...register("Address")} placeholder="Enter Address" />
-                <input type="number" {...register("Phone number")} placeholder='Enter Phone number' />
-                <button className="btn btn-success px-5" onClick={handelOk}>OK</button>
+                <input {...register("Address")} placeholder="Enter Address" required />
+                <input type="number" {...register("Phone number")} placeholder='Enter Phone number' required />
+                <button className="btn btn-success px-5" onClick={handelOk}>Proceed To Check Out</button>
             </form>
         </div>
     );

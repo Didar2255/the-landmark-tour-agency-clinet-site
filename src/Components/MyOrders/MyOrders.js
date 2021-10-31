@@ -39,8 +39,9 @@ const MyOrders = () => {
 
     }
     return (
-        <div>
-            <h2>All Order here {orders.length}</h2>
+        <div className='my-4'>
+            <h2>Order Summary !</h2>
+            <h6>Total order : {orders.length}</h6>
             <div className="my-4">
                 <Container>
                     <Row xs={1} md={3} className="g-4">
@@ -52,10 +53,11 @@ const MyOrders = () => {
                                         <Card.Body>
                                             <Card.Title>{order.tourName}</Card.Title>
                                             <Card.Text>
-                                                <h4>Package Price : {order.price}</h4>
+                                                <h6>Order id : {order._id}</h6>
+                                                <p>Package Price : {order.price}</p>
                                             </Card.Text>
                                             <Link to='/placeOrder'><button className='btn btn-info m-2'>Place Order</button></Link>
-                                            <button className='btn btn-danger' onClick={() => handelOrderPlace(order._id)}>Cancel</button>
+                                            <button className='btn btn-danger' onClick={() => handelOrderPlace(order._id)}><i class="fas fa-trash-alt"></i> Cancel</button>
 
                                         </Card.Body>
                                     </Card>
